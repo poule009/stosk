@@ -45,7 +45,7 @@
                                         <td>{{ $vente->vendeur->name ?? 'N/A' }}</td>
                                         <td>{{ $vente->quantity }}</td>
                                         {{-- number_format() pour un affichage propre du prix --}}
-                                        <td>{{ number_format($vente->price, 2, ',', ' ') }} €</td>
+                                        <td>{{ number_format($vente->price, 2, ',', ' ') }} CFA</td>
                                         <td>{{ optional($vente->created_at)->format('d/m/Y') }}</td>
                                         <td>
                                             {{-- Liens vers les actions pour chaque vente (Voir, Modifier) --}}

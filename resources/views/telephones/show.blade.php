@@ -15,7 +15,7 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Name:</strong>
+                <strong>Nom:</strong>
                 {{ $telephone->name }}
             </div>
         </div>
@@ -33,7 +33,7 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Price:</strong>
+                <strong>Prix:</strong>
                 {{ $telephone->price }}
             </div>
         </div>

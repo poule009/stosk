@@ -19,7 +19,8 @@
 
         {{-- Formulaire de création de client --}}
         <form action="{{ route('clients.store') }}" method="POST">
-            @csrf  {{-- Protection contre les attaques CSRF --}}
+            @csrf  {{-- Protection contre les attaques CSRF
+                 mdr c celui qui a choisi le nom n'est pas aller chercher bien loin --}}
             
             <div class="mb-3">
                 <label for="name" class="form-label">Nom</label>
@@ -38,7 +39,7 @@
 
             <div class="mb-3">
                 <label for="address" class="form-label">Adresse</label>
-                <textarea class="form-control" id="address" name="address">{{ old('address') }}</textarea>
+                <textarea class="form-control" id="address" name="address" value="{{ old('address') }}"></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary">Enregistrer</button>

@@ -46,7 +46,7 @@
                                     <td class="text-end">
                                         <a href="{{ route('vendeurs.show', $vendeur) }}" class="btn btn-sm btn-info" title="{{ __('Voir les détails') }}"><i class="fas fa-eye"></i></a>
                                         <a href="{{ route('vendeurs.edit', $vendeur) }}" class="btn btn-sm btn-warning" title="{{ __('Modifier') }}"><i class="fas fa-edit"></i></a>
-                                        <form action="{{ route('vendeurs.destroy', $vendeur) }}" method="POST" class="d-inline" onsubmit="return confirm('{{ __('Êtes-vous sûr de vouloir supprimer ce vendeur ?') }}');">
+                                        <form action="{{ route('vendeurs.destroy', $vendeur) }}" method="POST" class="d-inline"onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer ce vendeur ');">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="btn btn-sm btn-danger" title="{{ __('Supprimer') }}"><i class="fas fa-trash-alt"></i></button>

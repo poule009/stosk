@@ -39,7 +39,7 @@
 
             <div class="mb-3">
                 <label for="address" class="form-label">Adresse</label>
-                <textarea class="form-control" id="address" name="address">{{ old('address', $client->address) }}</textarea>
+                <textarea class="form-control" id="address" name="address" value="{{ old('address', $client->address)}"></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary">Mettre à jour</button>
